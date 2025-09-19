@@ -1,0 +1,6 @@
+let myArray = [[5,4,3,2,1],
+               [6,7,8,9,10],
+               [11,12,13,14,15]];
+ console.log(myArray.lenght);   
+ console.log(myArray[0].lenght);                       
+
