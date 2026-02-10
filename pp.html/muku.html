@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    < title>For You ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        h1, h2 {
+            color: #ff4d6d;
+        }
+
+        .message {
+            font-size: 16px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            position: relative;
+            height: 60px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        .no {
+            background-color: #ddd;
+            color: #333;
+            position: absolute;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff4d6d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Namaskar ❤️</h1>
+
+        <p class="message">
+            hi this is me pranish your silly bf yeah i just wanted to give you a lil surprise on this 14th feb and your birthday on 13th 
+            i know i am the worst and bad person you have ever got in your life. you are princess from heaven and i a deamon form hell but this
+            demon loves you. will  you be my valentine muku.
+        </p>
+
+        <p class="message">
+            i am really sorry for being such a pussy. ma mero sathu haru ko chakar ma lagayera hderai bigriye k k khaye ma cool huna j ni bolni 
+            timi lai humilate garni garye maile tesko lagi i am most sorry i am really for being like that. Ma paila jasto thiye j thiye ma  
+            aaile testo kei ni xaina but maile yo kura kasam kahyera vanna sakxu i only love you even if i have to die i will prove it i only love 
+            you aastha. 
+        </p>
+
+        <h2>Will you be my girlfriend? 💍</h2>
+
+        <div class="buttons">
+            <button class="yes" onclick="sayYes()">YES 💖</button>
+            <button class="no" id="noBtn">NO 🙈</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById("noBtn");
+
+        noBtn.addEventListener("mouseover", () => {
+            const x = Math.random() * 250 - 125;
+            const y = Math.random() * 200 - 100;
+            noBtn.style.transform = `translate(${x}px, ${y}px)`;
+        });
+
+        function sayYes() {
+            document.getElementById("result").innerText =
+                "YAY!!!";
+        }
+    </script>
+</body>
+</html>
